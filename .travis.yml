@@ -10,7 +10,6 @@ branches:
     - main
 
 script:
-  - yarn install
   - yarn build:prod
 
 deploy:
