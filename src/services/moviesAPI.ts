@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { MovieAPIResponse } from '../utils/interfaces';
 
-const API_URL = process.env.API_URL;
+const API_URL =
+  process.env.API_URL || 'https://dock-challenge-express.herokuapp.com/api';
 
 export const getPopularMovies = async (
   page: string = '1'
