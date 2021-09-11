@@ -13,7 +13,7 @@ const App = () => (
         <Route path="/dock-challenge-react/" exact>
           <Home />
         </Route>
-        <Route path="/dock-challenge-react/movie/:id">
+        <Route path="/dock-challenge-react/movie/:id" exact>
           <MovieDetails />
         </Route>
       </Switch>
