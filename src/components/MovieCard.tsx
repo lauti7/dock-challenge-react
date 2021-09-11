@@ -23,7 +23,10 @@ const MovieCard = ({ movie }: { movie: Movie }): JSX.Element => {
       </div>
       <p className="text-sm text-gray-400">{movie.release_date}</p>
       <div className="flex items-center justify-between w-full mt-2">
-        <Link to={`/movie/${movie.id}`} className="underline text-sm">
+        <Link
+          to={`/dock-challenge-react/movie/${movie.id}`}
+          className="underline text-sm"
+        >
           Go to
         </Link>
       </div>
