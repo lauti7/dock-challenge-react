@@ -60,7 +60,13 @@ const SearchMovies = (): JSX.Element => {
           </button>
         </div>
       </div>
-      <MoviesLayout movies={movies} title="Search" />
+      {requestStatus.loading ? (
+        <div className="flex flex-col justify-center h-screen items-center">
+          <p className="animate-spin text-xl">loading...</p>
+        </div>
+      ) : (
+        <MoviesLayout movies={movies} title="Search" />
+      )}
     </>
   );
 };
