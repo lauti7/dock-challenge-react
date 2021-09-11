@@ -10,10 +10,10 @@ const App = () => (
   <Layout>
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact>
+        <Route path="/dock-challenge-react/" exact>
           <Home />
         </Route>
-        <Route path="/movie/:id">
+        <Route path="/dock-challenge-react/movie/:id">
           <MovieDetails />
         </Route>
       </Switch>
