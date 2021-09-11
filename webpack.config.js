@@ -10,7 +10,7 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath:
-      process.env.NODE_ENV === 'production' ? '/dock-challenge-react/' : '/',
+      process.env.NODE_ENV === 'development' ? '/' : '/dock-challenge-react/',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
