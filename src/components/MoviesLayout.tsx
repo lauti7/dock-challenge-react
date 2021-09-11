@@ -1,12 +1,11 @@
 import React from 'react';
-import { Movie } from '../utils/interfaces';
 import MovieCard from './MovieCard';
 
 const MoviesLayout = ({
   movies,
   title,
 }: {
-  movies: Movie[];
+  movies: IMovie[];
   title: string;
 }): JSX.Element => {
   return (

@@ -1,20 +1,13 @@
-import { useEffect, useState } from 'react';
-import { getPopularMovies } from '../services/moviesAPI';
-import { Movie, RequestStatus } from '../utils/interfaces';
-
-interface Options {
-  page?: string;
-  query?: string;
-}
+import { useState } from 'react';
 
 const useMovies = (): {
-  movies: Movie[];
+  movies: IMovie[];
   setMovies: Function;
-  requestStatus: RequestStatus;
+  requestStatus: IRequestStatus;
   setReqStatus: Function;
 } => {
-  const [movies, setMovies] = useState<Array<Movie>>([]);
-  const [requestStatus, setReqStatus] = useState<RequestStatus>({
+  const [movies, setMovies] = useState<Array<IMovie>>([]);
+  const [requestStatus, setReqStatus] = useState<IRequestStatus>({
     loading: false,
     error: false,
     message: '',

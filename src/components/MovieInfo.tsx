@@ -1,7 +1,6 @@
 import React from 'react';
-import { Movie } from '../utils/interfaces';
 
-const MovieInfo = ({ movie }: { movie: Movie }) => {
+const MovieInfo = ({ movie }: { movie: IMovie }) => {
   return (
     <div className="p-3 mx-2 bg-gray-800 md:w-1/2 rounded-md shadow-lg">
       <p>

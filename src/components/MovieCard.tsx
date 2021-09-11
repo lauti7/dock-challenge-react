@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Movie } from '../utils/interfaces';
 
-const MovieCard = ({ movie }: { movie: Movie }): JSX.Element => {
+const MovieCard = ({ movie }: { movie: IMovie }): JSX.Element => {
   return (
     <div className="flex flex-col h-full bg-gray-800 rounded-md p-2 w-3/4 mx-auto md:w-full md:mx-none">
       <div className="w-full rounded-md bg-white bg-opacity-10 flex flex-col justify-center items-center">

@@ -1,4 +1,4 @@
-export interface Movie {
+interface IMovie {
   adult: boolean;
   backdrop_path: string;
   genre_ids?: number[];
@@ -29,7 +29,7 @@ export interface Movie {
   vote_average: number;
   vote_count: number;
 }
-export interface MovieAPIResponse {
+interface IMovieAPIResponse {
   movies: Movie[];
   current_page?: number;
   total_pages?: number;
@@ -37,7 +37,7 @@ export interface MovieAPIResponse {
   message?: string;
 }
 
-export interface RequestStatus {
+interface IRequestStatus {
   loading: boolean;
   error: boolean;
   message: string;

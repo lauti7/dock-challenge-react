@@ -3,7 +3,6 @@ import useMovies from '../hooks/useMovies';
 import MoviesLayout from '../components/MoviesLayout';
 import SearchMovies from '../components/SearchMovies';
 import { getPopularMovies } from '../services/moviesAPI';
-import { Movie } from '../utils/interfaces';
 
 const Home = (): JSX.Element => {
   const { movies, setMovies, requestStatus, setReqStatus } = useMovies();
